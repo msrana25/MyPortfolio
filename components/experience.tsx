@@ -15,7 +15,7 @@ export default function Experience() {
 
   return (
     <section ref= {ref} id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>My Journey</SectionHeading>
+      <SectionHeading>My Experience</SectionHeading>
       <VerticalTimeline lineColor="" animate={true}>
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
@@ -40,7 +40,7 @@ export default function Experience() {
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
               <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700">
+              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
             </VerticalTimelineElement>
